@@ -1,0 +1,115 @@
+// Hero Section
+.hero {
+  margin: 8em 0 0 0;
+
+  &__intro h1 {
+    margin: 0.7em auto;
+  }
+
+  &__intro p {
+    margin: 0 0 3em 0;
+    color: $font-primary;
+    width: 75%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 7px solid #fff;
+  border-radius: 10px;
+  margin: 0 0 4em 0;
+
+  input {
+    flex-grow: 1.5;
+    border: none;
+    padding: 1.1em;
+    border-radius: 1;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  ::placeholder {
+    color: $input-primary;
+    font-size: 15px;
+  }
+
+  button {
+    flex-grow: 1.2;
+    background-color: $button-primary;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all 250ms ease-in-out;
+  }
+
+  button:hover {
+    background-color: $body-primary;
+    scale: 1.01;
+  }
+}
+
+.wrapper {
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: none;
+  z-index: -1;
+
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.socials {
+  margin: 0 0 4em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .fa-lg {
+    margin: 0 1em;
+    color: $font-primary;
+    cursor: pointer;
+  }
+}
+
+// Blog Section
+
+.blog {
+  & h5 {
+    margin: 0 0 0.8em 0;
+  }
+
+  & p {
+    margin: 0.8em 0;
+  }
+
+  & img {
+    border-radius: 15px;
+  }
+
+  &__btn {
+    padding: 1em 3.5em;
+    border: none;
+    border-radius: 10px;
+    margin: 1em 0;
+    cursor: pointer;
+  }
+}
+
+.attribution {
+  margin: 3.5em 0 1.5em 0;
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  flex-grow: 2;
+  & p {
+    color: $font-primary;
+    font-size: 13px;
+  }
+}

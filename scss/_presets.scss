@@ -1,0 +1,64 @@
+// Presets //
+
+// Variables
+
+// Colors
+$body-primary: #2727c9;
+$font-primary: #9393ff;
+$input-primary: #707070;
+$button-primary: #d1d1d1;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $body-primary;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+  /* added for nav-toggle positioning */
+  position: relative;
+}
+
+@media (min-width: 650px) {
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 649px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}

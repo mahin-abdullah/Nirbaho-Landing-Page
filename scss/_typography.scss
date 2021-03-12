@@ -1,0 +1,45 @@
+// Typography
+
+@font-face {
+  font-family: "Objectivity";
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/Objectivity-Medium.woff2) format("woff2");
+}
+
+body,
+input,
+button {
+  font-family: "Objectivity";
+}
+
+h1,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 34px;
+  /* Converted from XD's AV to px */
+  line-height: 29pt;
+  font-weight: normal;
+  letter-spacing: -0.7px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 15pt;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.description {
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
