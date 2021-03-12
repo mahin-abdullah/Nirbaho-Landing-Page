@@ -42,4 +42,26 @@ h5 {
   font-size: 23px;
   line-height: 25px;
   letter-spacing: -0.5px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 45px;
+    /* Converted from XD's AV to px */
+    line-height: 39pt;
+    letter-spacing: -1.7px;
+  }
+
+  p {
+    font-size: 20px;
+    letter-spacing: -0.35px;
+    line-height: 20pt;
+    color: #aaaaff;
+  }
+
+  .description {
+    font-size: 26px;
+    line-height: 29px;
+  }
 }

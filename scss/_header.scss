@@ -46,3 +46,24 @@ nav {
     width: 21px;
   }
 }
+
+@media (min-width: 650px) {
+  .logo {
+    flex-grow: 1;
+  }
+  .nav__list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    transition: all 250ms ease-in-out;
+  }
+
+  .nav__list li:hover {
+    filter: brightness(1.3);
+  }
+
+  .nav__list li:last-child {
+    margin-left: 2em;
+  }
+}

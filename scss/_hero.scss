@@ -75,6 +75,12 @@ form {
     margin: 0 1em;
     color: $font-primary;
     cursor: pointer;
+
+    transition: filter 250ms ease-in-out;
+  }
+
+  .fa-lg:hover {
+    filter: brightness(1.5);
   }
 }
 
@@ -99,6 +105,12 @@ form {
     border-radius: 10px;
     margin: 1em 0;
     cursor: pointer;
+
+    transition: all 250ms ease-in-out;
+  }
+
+  &__btn:hover {
+    opacity: 75%;
   }
 }
 
@@ -111,5 +123,62 @@ form {
   & p {
     color: $font-primary;
     font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex--lg {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 1.5em;
+  }
+
+  .hero__intro {
+    flex-grow: 3;
+    width: 50%;
+
+    & h1 {
+      margin: 0 0 0.7em 0;
+    }
+
+    & p {
+      width: 50%;
+    }
+
+    form,
+    .socials {
+      width: 85%;
+    }
+
+    .socials {
+      justify-content: flex-start;
+
+      .fa-lg {
+        margin: 0 3em 0 0;
+      }
+    }
+  }
+
+  .hero__blog {
+    flex-grow: 1;
+    width: 35%;
+  }
+
+  .wrapper__lg {
+    background-size: cover;
+    background-repeat: none;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 45em;
+  }
+
+  .wrapper {
+    display: none;
+  }
+
+  .attribution {
+    margin: 10em 0 0 0;
   }
 }
