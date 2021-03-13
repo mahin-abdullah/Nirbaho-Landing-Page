@@ -24,7 +24,7 @@ form {
   input {
     flex-grow: 1.5;
     border: none;
-    padding: 1.1em;
+    padding: 1.5em;
     border-radius: 1;
   }
 
@@ -105,7 +105,7 @@ form {
     border-radius: 10px;
     margin: 1em 0;
     cursor: pointer;
-
+    color: #2727c9;
     transition: all 250ms ease-in-out;
   }
 
@@ -151,6 +151,11 @@ form {
       width: 85%;
     }
 
+    form {
+      width: 75%;
+      filter: drop-shadow(5px 15px 35px #1a1ab1);
+    }
+
     .socials {
       justify-content: flex-start;
 
@@ -165,12 +170,16 @@ form {
     width: 35%;
   }
 
+  .blog h5 {
+    margin-bottom: 1.4em;
+  }
+
   .wrapper__lg {
     background-size: cover;
     background-repeat: none;
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 13em;
     right: 45em;
   }
 

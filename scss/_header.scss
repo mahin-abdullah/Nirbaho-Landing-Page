@@ -51,11 +51,18 @@ nav {
   .logo {
     flex-grow: 1;
   }
+
+  .logo img {
+    width: 14%;
+  }
+
   .nav__list {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+  }
 
+  .nav__list li {
     transition: all 250ms ease-in-out;
   }
 
